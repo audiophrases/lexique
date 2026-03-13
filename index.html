@@ -1,1 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progression du lexique A1 → B1</title>
+    <style>
+      :root {
+        --a1: #dff3ff;
+        --a2: #e8f7dc;
+        --b1: #fff4d6;
+        --bg: #f7f9fc;
+        --text: #223;
+        --card: #ffffff;
+        --border: #d7deea;
+      }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.4;
+      }
+
+      header {
+        background: linear-gradient(120deg, #2a74d7, #5a9ff0);
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: clamp(1.5rem, 2.7vw, 2.3rem);
+      }
+
+      header p {
+        margin: 0.6rem auto 0;
+        max-width: 820px;
+      }
+
+      main {
+        max-width: 1150px;
+        margin: 1.4rem auto 3rem;
+        padding: 0 1rem;
+      }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-bottom: 1.2rem;
+      }
+
+      .chip {
+        padding: 0.4rem 0.65rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .a1 {
+        background: var(--a1);
+      }
+
+      .a2 {
+        background: var(--a2);
+      }
+
+      .b1 {
+        background: var(--b1);
+      }
+
+      .themes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+      }
+
+      .theme {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        box-shadow: 0 2px 10px rgba(34, 43, 66, 0.06);
+        overflow: hidden;
+      }
+
+      .theme h2 {
+        margin: 0;
+        padding: 0.85rem 1rem;
+        font-size: 1.05rem;
+        background: #f0f4fa;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .levels {
+        padding: 0.9rem;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .box {
+        border-radius: 10px;
+        padding: 0.7rem;
+      }
+
+      .box h3 {
+        margin: 0 0 0.35rem;
+        font-size: 0.98rem;
+      }
+
+      .box ul {
+        margin: 0;
+        padding-left: 1.1rem;
+      }
+
+      .box li {
+        margin: 0.2rem 0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.4rem;
+        color: #47516a;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Boîtes à lexique : progression A1 → B1</h1>
+      <p>
+        Une vue simple pour aider les élèves à voir comment le vocabulaire attendu
+        évolue entre les niveaux A1, A2 et B1 selon les grandes thématiques.
+      </p>
+    </header>
+
+    <main>
+      <section class="legend" aria-label="Légende des niveaux">
+        <span class="chip a1">A1 : mots du quotidien immédiat</span>
+        <span class="chip a2">A2 : autonomie dans la vie courante</span>
+        <span class="chip b1">B1 : expression plus précise et argumentée</span>
+      </section>
+
+      <section class="themes" aria-label="Progression par thématique">
+        <article class="theme">
+          <h2>Se présenter / Vie personnelle</h2>
+          <div class="levels">
+            <div class="box a1">
+              <h3>A1</h3>
+              <ul>
+                <li>nom, âge, nationalité, adresse</li>
+                <li>famille proche (mère, frère, etc.)</li>
+                <li>goûts simples (j'aime / je n'aime pas)</li>
+              </ul>
+            </div>
+            <div class="box a2">
+              <h3>A2</h3>
+              <ul>
+                <li>études, profession, routines</li>
+                <li>traits de caractère fréquents</li>
+                <li>projets proches et expériences passées</li>
+              </ul>
+            </div>
+            <div class="box b1">
+              <h3>B1</h3>
+              <ul>
+                <li>parcours personnel plus détaillé</li>
+                <li>qualités / défauts nuancés</li>
+                <li>objectifs, motivations, priorités</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme">
+          <h2>École / Travail</h2>
+          <div class="levels">
+            <div class="box a1">
+              <h3>A1</h3>
+              <ul>
+                <li>salle de classe, matières, horaires</li>
+                <li>consignes simples (écouter, écrire)</li>
+                <li>objets scolaires du quotidien</li>
+              </ul>
+            </div>
+            <div class="box a2">
+              <h3>A2</h3>
+              <ul>
+                <li>organisation de la journée</li>
+                <li>tâches et responsabilités simples</li>
+                <li>relations avec collègues / camarades</li>
+              </ul>
+            </div>
+            <div class="box b1">
+              <h3>B1</h3>
+              <ul>
+                <li>description d'un poste ou d'un projet</li>
+                <li>compétences et difficultés</li>
+                <li>opinion sur méthodes et résultats</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme">
+          <h2>Maison / Ville / Déplacements</h2>
+          <div class="levels">
+            <div class="box a1">
+              <h3>A1</h3>
+              <ul>
+                <li>pièces de la maison, meubles</li>
+                <li>lieux de la ville (gare, école, parc)</li>
+                <li>indications basiques (à gauche, tout droit)</li>
+              </ul>
+            </div>
+            <div class="box a2">
+              <h3>A2</h3>
+              <ul>
+                <li>services urbains (banque, poste, mairie)</li>
+                <li>types de logement et quartier</li>
+                <li>transports, horaires, itinéraires</li>
+              </ul>
+            </div>
+            <div class="box b1">
+              <h3>B1</h3>
+              <ul>
+                <li>avantages / inconvénients d'un lieu</li>
+                <li>comparaison ville-campagne</li>
+                <li>mobilité, environnement, aménagement</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme">
+          <h2>Achats / Alimentation / Santé</h2>
+          <div class="levels">
+            <div class="box a1">
+              <h3>A1</h3>
+              <ul>
+                <li>nourriture de base, repas</li>
+                <li>prix, quantités, monnaie</li>
+                <li>parties du corps, symptômes simples</li>
+              </ul>
+            </div>
+            <div class="box a2">
+              <h3>A2</h3>
+              <ul>
+                <li>faire des courses plus détaillées</li>
+                <li>goûts, habitudes alimentaires</li>
+                <li>conseils de santé courants</li>
+              </ul>
+            </div>
+            <div class="box b1">
+              <h3>B1</h3>
+              <ul>
+                <li>consommation responsable</li>
+                <li>régimes, équilibre alimentaire</li>
+                <li>décrire un problème de santé avec précision</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme">
+          <h2>Loisirs / Culture / Numérique</h2>
+          <div class="levels">
+            <div class="box a1">
+              <h3>A1</h3>
+              <ul>
+                <li>sports et loisirs fréquents</li>
+                <li>jours, dates, activités du week-end</li>
+                <li>outils numériques de base</li>
+              </ul>
+            </div>
+            <div class="box a2">
+              <h3>A2</h3>
+              <ul>
+                <li>sorties, événements simples</li>
+                <li>médias (film, musique, réseaux)</li>
+                <li>actions en ligne courantes</li>
+              </ul>
+            </div>
+            <div class="box b1">
+              <h3>B1</h3>
+              <ul>
+                <li>critiquer un film, un livre, une chanson</li>
+                <li>exprimer préférences et justifications</li>
+                <li>parler des usages du numérique</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="theme">
+          <h2>Société / Environnement / Citoyenneté</h2>
+          <div class="levels">
+            <div class="box a1">
+              <h3>A1</h3>
+              <ul>
+                <li>fêtes, règles de politesse</li>
+                <li>météo et saisons</li>
+                <li>gestes écologiques élémentaires</li>
+              </ul>
+            </div>
+            <div class="box a2">
+              <h3>A2</h3>
+              <ul>
+                <li>services publics de base</li>
+                <li>petits problèmes de la vie sociale</li>
+                <li>tri, recyclage, énergie au quotidien</li>
+              </ul>
+            </div>
+            <div class="box b1">
+              <h3>B1</h3>
+              <ul>
+                <li>solidarité, participation, engagement</li>
+                <li>débattre de sujets de société simples</li>
+                <li>causes et conséquences environnementales</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      Vous pouvez adapter ces boîtes selon votre programme et ajouter des exemples
+      de mots appris en classe.
+    </footer>
+  </body>
+</html>
