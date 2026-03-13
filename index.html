@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Progression du lexique A1 → B1</title>
+    <title>Ressource FLE pour hispanophones — A1/A2</title>
     <style>
       :root {
-        --a1: #dff3ff;
-        --a2: #e8f7dc;
-        --b1: #fff4d6;
-        --bg: #f7f9fc;
-        --text: #223;
+        --bg: #f4f7fb;
         --card: #ffffff;
-        --border: #d7deea;
+        --line: #d6dfeb;
+        --text: #1e2a39;
+        --accent: #2d73d5;
       }
 
       * {
@@ -24,516 +22,271 @@
         font-family: "Segoe UI", Roboto, Arial, sans-serif;
         background: var(--bg);
         color: var(--text);
-        line-height: 1.4;
+        line-height: 1.45;
       }
 
       header {
-        background: linear-gradient(120deg, #2a74d7, #5a9ff0);
-        color: white;
-        padding: 2rem 1rem;
+        background: linear-gradient(120deg, #2d73d5, #5d9ef2);
+        color: #fff;
+        padding: 1.8rem 1rem;
         text-align: center;
       }
 
-      header h1 {
-        margin: 0;
-        font-size: clamp(1.5rem, 2.7vw, 2.3rem);
-      }
-
-      header p {
-        margin: 0.6rem auto 0;
-        max-width: 820px;
-      }
-
       main {
-        max-width: 1150px;
-        margin: 1.4rem auto 3rem;
+        max-width: 980px;
+        margin: 1.2rem auto 2rem;
         padding: 0 1rem;
       }
 
-      .legend {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.7rem;
-        margin-bottom: 1.2rem;
-      }
-
-      .chip {
-        padding: 0.4rem 0.65rem;
-        border-radius: 999px;
-        font-weight: 600;
-        font-size: 0.9rem;
-      }
-
-      .a1 {
-        background: var(--a1);
-      }
-
-      .a2 {
-        background: var(--a2);
-      }
-
-      .b1 {
-        background: var(--b1);
-      }
-
-      .themes {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1rem;
+      .intro {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 1rem;
+        margin-bottom: 1rem;
       }
 
       .theme {
         background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        box-shadow: 0 2px 10px rgba(34, 43, 66, 0.06);
-        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 1rem;
+        margin-bottom: 1rem;
       }
 
       .theme h2 {
-        margin: 0;
-        padding: 0.85rem 1rem;
-        font-size: 1.05rem;
-        background: #f0f4fa;
-        border-bottom: 1px solid var(--border);
+        margin: 0 0 0.6rem;
+        color: var(--accent);
+        font-size: 1.1rem;
       }
 
-      .levels {
-        padding: 0.9rem;
-        display: grid;
-        gap: 0.75rem;
+      .rubrique {
+        margin: 0.45rem 0;
       }
 
-      .box {
-        border-radius: 10px;
-        padding: 0.7rem;
+      .rubrique strong {
+        display: block;
+        margin-bottom: 0.2rem;
       }
 
-      .box h3 {
-        margin: 0 0 0.35rem;
-        font-size: 0.98rem;
-      }
-
-      .box ul {
-        margin: 0;
+      ul {
+        margin: 0.25rem 0 0.2rem;
         padding-left: 1.1rem;
       }
 
-      .box li {
-        margin: 0.2rem 0;
+      .quiz h3 {
+        margin-top: 0;
+      }
+
+      .corrige {
+        background: #eef5ff;
+        border-left: 4px solid var(--accent);
+        padding: 0.7rem 0.8rem;
+        border-radius: 6px;
       }
 
       footer {
         text-align: center;
-        padding: 1.4rem;
-        color: #47516a;
+        color: #445267;
         font-size: 0.9rem;
+        padding: 1rem;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Boîtes à lexique : progression A1 → B1</h1>
-      <p>
-        Une vue simple pour aider les élèves à voir comment le vocabulaire attendu
-        évolue entre les niveaux A1, A2 et B1 selon les grandes thématiques.
-      </p>
+      <h1>Français pratique pour apprenants hispanophones</h1>
+      <p>Version compacte, prête à l'emploi (A1/A2)</p>
     </header>
 
     <main>
-      <section class="legend" aria-label="Légende des niveaux">
-        <span class="chip a1">A1 : mots du quotidien immédiat</span>
-        <span class="chip a2">A2 : autonomie dans la vie courante</span>
-        <span class="chip b1">B1 : expression plus précise et argumentée</span>
+      <section class="intro">
+        <p>
+          Cette fiche regroupe le vocabulaire et les structures les plus utiles pour
+          communiquer dans des situations quotidiennes.
+        </p>
       </section>
 
-      <section class="themes" aria-label="Progression par thématique">
-        <article class="theme">
-          <h2>Se présenter / Vie personnelle</h2>
-          <div class="levels">
-            <div class="box a1">
-              <h3>A1</h3>
-              <ul>
-                <li>
-                  <strong>Nom, âge, nationalité, adresse</strong>
-                  <ul>
-                    <li>
-                      <strong>Dire son nom :</strong> Je m'appelle..., Moi, c'est...,
-                      Je suis..., Mon prénom, c'est..., Mon nom de famille,
-                      c'est...
-                    </li>
-                    <li>
-                      <strong>Pour demander :</strong> Comment tu t'appelles ? /
-                      Comment vous vous appelez ? / Quel est ton prénom ? / Quel
-                      est ton nom de famille ?
-                    </li>
-                    <li>
-                      <strong>Dire son âge :</strong> J'ai ... ans.
-                      <em>Point de vigilance :</em> on dit « J'ai 14 ans » et non « Je
-                      suis 14 ans ».
-                    </li>
-                    <li>
-                      <strong>Pour demander l'âge :</strong> Quel âge as-tu ? / Tu
-                      as quel âge ? / Quel âge avez-vous ?
-                    </li>
-                    <li>
-                      <strong>Dire sa nationalité / son origine :</strong> Je suis
-                      français / française ; Je viens de... ; Je suis de...
-                    </li>
-                    <li>
-                      <strong>Pour demander :</strong> Tu es de quelle nationalité ?
-                      / Quelle est ta nationalité ? / D'où tu viens ? / Tu viens
-                      d'où ?
-                    </li>
-                    <li>
-                      <strong>Dire où on habite / son adresse :</strong> J'habite
-                      à..., en..., au... ; Mon adresse, c'est... ; J'habite dans une
-                      maison / un appartement.
-                    </li>
-                    <li>
-                      <strong>À travailler en priorité :</strong> à + ville (à Paris)
-                      ; en + pays féminin (en France) ; au + pays masculin (au
-                      Maroc).
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Famille proche (mère, frère, etc.)</strong>
-                  <ul>
-                    <li>
-                      <strong>Présenter sa famille :</strong> Dans ma famille, il y
-                      a... ; J'ai... ; Je n'ai pas de... ; C'est mon père / ma mère /
-                      mon frère / ma sœur ; Voici mon père / ma mère.
-                    </li>
-                    <li>
-                      <strong>Questions utiles :</strong> Tu as des frères et sœurs ?
-                      / Dans ta famille, il y a combien de personnes ? / Tu as une
-                      sœur ? / C'est qui ?
-                    </li>
-                    <li>
-                      <strong>Donner des informations :</strong> Il/Elle s'appelle...
-                      ; Il/Elle a ... ans ; Il/Elle habite à... ; Il/Elle est...
-                    </li>
-                    <li>
-                      <strong>Composition familiale :</strong> Nous sommes ... dans la
-                      famille ; J'habite avec... ; Mes parents sont... ; J'ai un petit
-                      frère / une grande sœur.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Goûts simples (j'aime / je n'aime pas)</strong>
-                  <ul>
-                    <li>
-                      <strong>Dire ce qu'on aime :</strong> J'aime... ; J'adore...
-                      ; J'aime bien... ; Mon activité préférée, c'est... ; Mon plat
-                      préféré, c'est...
-                    </li>
-                    <li>
-                      <strong>Dire ce qu'on n'aime pas :</strong> Je n'aime pas... ;
-                      Je n'aime pas du tout... ; Je déteste...
-                    </li>
-                    <li>
-                      <strong>Parler d'activités :</strong> J'aime + nom ; J'aime +
-                      infinitif ; Je préfère... ; Je joue à... ; Je fais...
-                    </li>
-                    <li>
-                      <strong>Demander les goûts :</strong> Tu aimes... ? / Qu'est-ce
-                      que tu aimes ? / Quel est ton sport préféré ? / Quelle est ta
-                      musique préférée ? / Tu préfères... ou ... ?
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Structures transversales indispensables</strong>
-                  <ul>
-                    <li>
-                      <strong>Se présenter :</strong> Bonjour, je m'appelle... ; J'ai
-                      ... ans ; Je suis... ; J'habite à... ; J'aime... ; Dans ma
-                      famille, il y a...
-                    </li>
-                    <li>
-                      <strong>Poser des questions :</strong> Comment tu t'appelles ?
-                      ; Quel âge as-tu ? ; Tu habites où ? ; Tu as des frères et
-                      sœurs ? ; Tu aimes quoi ?
-                    </li>
-                    <li>
-                      <strong>Réponses courtes :</strong> Oui ; Non ; Oui, j'aime ;
-                      Non, je n'aime pas ; Moi aussi ; Moi non plus.
-                    </li>
-                    <li>
-                      <strong>Relier des idées :</strong> et ; mais ; aussi.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Mini production modèle A1 :</strong> « Bonjour, je
-                  m'appelle Nadia. J'ai 13 ans. Je suis marocaine. J'habite à
-                  Barcelone. Dans ma famille, il y a quatre personnes : mon père, ma
-                  mère, mon frère et moi. J'aime la musique et le basket. Je n'aime
-                  pas les maths. »
-                </li>
-                <li>
-                  <strong>Version très synthétique pour une programmation :</strong>
-                  Je m'appelle... ; J'ai ... ans ; Je suis... ; Je viens de...
-                  ; J'habite à... ; J'ai... ; C'est mon / ma... ; Il/Elle
-                  s'appelle... ; Nous sommes ... dans la famille ; J'aime... ;
-                  J'adore... ; Je n'aime pas... ; Je déteste... ; Je préfère...
-                </li>
-              </ul>
-            </div>
-            <div class="box a2">
-              <h3>A2</h3>
-              <ul>
-                <li>études, profession, routines</li>
-                <li>traits de caractère fréquents</li>
-                <li>projets proches et expériences passées</li>
-                <li>
-                  <strong>Structures :</strong> « Je travaille comme vendeuse. » ;
-                  « D'habitude, je me lève à 7h. » ; « L'an dernier, j'ai fait un
-                  stage. »
-                </li>
-              </ul>
-            </div>
-            <div class="box b1">
-              <h3>B1</h3>
-              <ul>
-                <li>parcours personnel plus détaillé</li>
-                <li>qualités / défauts nuancés</li>
-                <li>objectifs, motivations, priorités</li>
-                <li>
-                  <strong>Structures :</strong> « Ce qui me motive, c'est... » ;
-                  « J'aimerais évoluer vers... » ; « Même si c'est difficile, je... »
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
+      <section class="theme">
+        <h2>Bloc 1 : Se présenter</h2>
+        <div class="rubrique">
+          <strong>1. Sous-thème</strong>
+          Présentation personnelle : identité, âge, nationalité, ville.
+        </div>
+        <div class="rubrique">
+          <strong>2. Objectif de communication</strong>
+          Donner et demander des informations personnelles de base.
+        </div>
+        <div class="rubrique">
+          <strong>3. Vocabulaire clé</strong>
+          prénom, nom de famille, âge, nationalité, adresse, ville, pays.
+        </div>
+        <div class="rubrique">
+          <strong>4. Structures utiles</strong>
+          <ul>
+            <li>Je m'appelle… / Mon prénom, c'est…</li>
+            <li>J'ai … ans.</li>
+            <li>Je suis espagnol(e). / Je viens d'Espagne.</li>
+            <li>J'habite à Madrid / en Espagne / au Mexique.</li>
+            <li>Comment tu t'appelles ? / Quel âge as-tu ? / D'où tu viens ?</li>
+          </ul>
+        </div>
+        <div class="rubrique">
+          <strong>5. Exemples</strong>
+          <ul>
+            <li>Bonjour, je m'appelle Lucia et j'ai 16 ans.</li>
+            <li>Je viens d'Espagne, mais j'habite à Lyon.</li>
+          </ul>
+        </div>
+        <div class="rubrique">
+          <strong>6. Redflag – erreurs typiques des hispanophones</strong>
+          <ul>
+            <li>
+              ❌ Je suis 16 ans<br />
+              ✅ J'ai 16 ans<br />
+              → En français, on utilise <em>avoir</em> pour l'âge.
+            </li>
+            <li>
+              ❌ Je suis de Espagne<br />
+              ✅ Je viens d'Espagne / Je suis espagnole<br />
+              → Attention à la structure avec <em>de + pays</em>.
+            </li>
+            <li>
+              ❌ J'habite en Madrid<br />
+              ✅ J'habite à Madrid<br />
+              → <em>à</em> avec les villes, pas <em>en</em>.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <article class="theme">
-          <h2>École / Travail</h2>
-          <div class="levels">
-            <div class="box a1">
-              <h3>A1</h3>
-              <ul>
-                <li>salle de classe, matières, horaires</li>
-                <li>consignes simples (écouter, écrire)</li>
-                <li>objets scolaires du quotidien</li>
-                <li>
-                  <strong>Structures :</strong> « Nous avons français à 10h. » ;
-                  « Ouvrez le cahier, s'il vous plaît. » ; « Il y a un stylo sur la
-                  table. »
-                </li>
-              </ul>
-            </div>
-            <div class="box a2">
-              <h3>A2</h3>
-              <ul>
-                <li>organisation de la journée</li>
-                <li>tâches et responsabilités simples</li>
-                <li>relations avec collègues / camarades</li>
-                <li>
-                  <strong>Structures :</strong> « Je dois préparer le dossier. » ;
-                  « On se retrouve à midi ? » ; « Je m'occupe de... »
-                </li>
-              </ul>
-            </div>
-            <div class="box b1">
-              <h3>B1</h3>
-              <ul>
-                <li>description d'un poste ou d'un projet</li>
-                <li>compétences et difficultés</li>
-                <li>opinion sur méthodes et résultats</li>
-                <li>
-                  <strong>Structures :</strong> « Je suis chargé de... » ; « J'ai du
-                  mal à..., mais je progresse. » ; « À mon avis, cette méthode est
-                  efficace. »
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
+      <section class="theme">
+        <h2>Bloc 2 : Parler de sa famille</h2>
+        <div class="rubrique">
+          <strong>1. Sous-thème</strong>
+          Famille proche et relations.
+        </div>
+        <div class="rubrique">
+          <strong>2. Objectif de communication</strong>
+          Présenter les membres de sa famille et donner des infos simples.
+        </div>
+        <div class="rubrique">
+          <strong>3. Vocabulaire clé</strong>
+          père, mère, frère, sœur, parents, marié(e), enfant, grand(e).
+        </div>
+        <div class="rubrique">
+          <strong>4. Structures utiles</strong>
+          <ul>
+            <li>Dans ma famille, il y a…</li>
+            <li>J'ai un frère / une sœur.</li>
+            <li>Il s'appelle… / Elle a … ans.</li>
+            <li>J'habite avec mes parents.</li>
+            <li>Tu as des frères et sœurs ?</li>
+          </ul>
+        </div>
+        <div class="rubrique">
+          <strong>5. Exemples</strong>
+          <ul>
+            <li>Dans ma famille, il y a cinq personnes.</li>
+            <li>Ma sœur s'appelle Ana et elle a 12 ans.</li>
+          </ul>
+        </div>
+        <div class="rubrique">
+          <strong>6. Redflag – erreurs typiques des hispanophones</strong>
+          <ul>
+            <li>
+              ❌ Je suis 4 dans ma famille<br />
+              ✅ Nous sommes 4 dans ma famille<br />
+              → On exprime le nombre avec <em>nous sommes</em>.
+            </li>
+            <li>
+              ❌ Mon père est 45 ans<br />
+              ✅ Mon père a 45 ans<br />
+              → Pour l'âge, toujours <em>avoir</em>.
+            </li>
+            <li>
+              ❌ J'ai 2 frères et 1 sœur, ils est petits<br />
+              ✅ J'ai 2 frères et 1 sœur, ils sont petits<br />
+              → Accord du verbe <em>être</em> au pluriel.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <article class="theme">
-          <h2>Maison / Ville / Déplacements</h2>
-          <div class="levels">
-            <div class="box a1">
-              <h3>A1</h3>
-              <ul>
-                <li>pièces de la maison, meubles</li>
-                <li>lieux de la ville (gare, école, parc)</li>
-                <li>indications basiques (à gauche, tout droit)</li>
-                <li>
-                  <strong>Structures :</strong> « Ma chambre est petite. » ; « La
-                  boulangerie est en face de la gare. » ; « Tournez à droite. »
-                </li>
-              </ul>
-            </div>
-            <div class="box a2">
-              <h3>A2</h3>
-              <ul>
-                <li>services urbains (banque, poste, mairie)</li>
-                <li>types de logement et quartier</li>
-                <li>transports, horaires, itinéraires</li>
-                <li>
-                  <strong>Structures :</strong> « Je prends le bus pour aller au
-                  centre-ville. » ; « Le train part à 8h15. » ; « Mon quartier est
-                  assez calme. »
-                </li>
-              </ul>
-            </div>
-            <div class="box b1">
-              <h3>B1</h3>
-              <ul>
-                <li>avantages / inconvénients d'un lieu</li>
-                <li>comparaison ville-campagne</li>
-                <li>mobilité, environnement, aménagement</li>
-                <li>
-                  <strong>Structures :</strong> « Le principal avantage, c'est... » ;
-                  « La ville est plus animée que la campagne. » ; « Il faudrait
-                  améliorer les transports. »
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
+      <section class="theme">
+        <h2>Bloc 3 : Goûts et préférences</h2>
+        <div class="rubrique">
+          <strong>1. Sous-thème</strong>
+          Dire ce qu'on aime, n'aime pas, préfère.
+        </div>
+        <div class="rubrique">
+          <strong>2. Objectif de communication</strong>
+          Exprimer des goûts personnels dans la vie quotidienne.
+        </div>
+        <div class="rubrique">
+          <strong>3. Vocabulaire clé</strong>
+          aimer, adorer, détester, préférer, activité, sport, musique, plat.
+        </div>
+        <div class="rubrique">
+          <strong>4. Structures utiles</strong>
+          <ul>
+            <li>J'aime + nom (J'aime la musique).</li>
+            <li>J'aime + infinitif (J'aime lire).</li>
+            <li>Je n'aime pas… / Je déteste…</li>
+            <li>Je préfère… à…</li>
+            <li>Mon activité préférée, c'est…</li>
+          </ul>
+        </div>
+        <div class="rubrique">
+          <strong>5. Exemples</strong>
+          <ul>
+            <li>J'aime jouer au foot, mais je n'aime pas courir.</li>
+            <li>Je préfère le thé au café.</li>
+          </ul>
+        </div>
+        <div class="rubrique">
+          <strong>6. Redflag – erreurs typiques des hispanophones</strong>
+          <ul>
+            <li>
+              ❌ J'aime de la musique classique<br />
+              ✅ J'aime la musique classique<br />
+              → Après <em>aimer</em>, on utilise souvent un article défini.
+            </li>
+            <li>
+              ❌ Je préfère plus le cinéma<br />
+              ✅ Je préfère le cinéma<br />
+              → Éviter <em>plus</em> inutile après <em>préférer</em>.
+            </li>
+            <li>
+              ❌ Je joue football<br />
+              ✅ Je joue au football<br />
+              → <em>jouer à + sport</em>.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <article class="theme">
-          <h2>Achats / Alimentation / Santé</h2>
-          <div class="levels">
-            <div class="box a1">
-              <h3>A1</h3>
-              <ul>
-                <li>nourriture de base, repas</li>
-                <li>prix, quantités, monnaie</li>
-                <li>parties du corps, symptômes simples</li>
-                <li>
-                  <strong>Structures :</strong> « Je voudrais un kilo de pommes. » ;
-                  « Ça coûte combien ? » ; « J'ai mal à la tête. »
-                </li>
-              </ul>
-            </div>
-            <div class="box a2">
-              <h3>A2</h3>
-              <ul>
-                <li>faire des courses plus détaillées</li>
-                <li>goûts, habitudes alimentaires</li>
-                <li>conseils de santé courants</li>
-                <li>
-                  <strong>Structures :</strong> « Je mange souvent des légumes. » ;
-                  « Je préfère le thé au café. » ; « Vous devriez vous reposer. »
-                </li>
-              </ul>
-            </div>
-            <div class="box b1">
-              <h3>B1</h3>
-              <ul>
-                <li>consommation responsable</li>
-                <li>régimes, équilibre alimentaire</li>
-                <li>décrire un problème de santé avec précision</li>
-                <li>
-                  <strong>Structures :</strong> « J'essaie de réduire ma consommation
-                  de sucre. » ; « Depuis trois jours, j'ai une douleur au dos. » ;
-                  « Il vaut mieux éviter les produits ultra-transformés. »
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
+      <section class="theme quiz">
+        <h2>Quiz final (8 questions)</h2>
+        <h3>Questions</h3>
+        <ol>
+          <li><strong>QCM :</strong> Quelle phrase est correcte ?<br />a) Je suis 14 ans. b) J'ai 14 ans. c) Je fais 14 ans.</li>
+          <li><strong>Vrai/Faux :</strong> On dit : « J'habite en Madrid ».</li>
+          <li><strong>QCM :</strong> Complète : « Je viens ___ Espagne. »<br />a) de b) d' c) du</li>
+          <li><strong>Vrai/Faux :</strong> « Mon frère est 10 ans » est correct.</li>
+          <li><strong>QCM :</strong> Choisis la bonne question :<br />a) Quel âge tu as ? b) Quel âge as-tu ? c) Tu as âge quel ?</li>
+          <li><strong>Vrai/Faux :</strong> On peut dire : « Je joue au tennis ».</li>
+          <li><strong>QCM :</strong> Quelle phrase est correcte ?<br />a) J'aime écouter la musique. b) J'aime écouter musique. c) J'aime écouter de musique.</li>
+          <li><strong>Vrai/Faux :</strong> « Nous sommes 5 dans ma famille » est correct.</li>
+        </ol>
 
-        <article class="theme">
-          <h2>Loisirs / Culture / Numérique</h2>
-          <div class="levels">
-            <div class="box a1">
-              <h3>A1</h3>
-              <ul>
-                <li>sports et loisirs fréquents</li>
-                <li>jours, dates, activités du week-end</li>
-                <li>outils numériques de base</li>
-                <li>
-                  <strong>Structures :</strong> « Le samedi, je joue au foot. » ;
-                  « On se voit dimanche ? » ; « Je me connecte à l'application. »
-                </li>
-              </ul>
-            </div>
-            <div class="box a2">
-              <h3>A2</h3>
-              <ul>
-                <li>sorties, événements simples</li>
-                <li>médias (film, musique, réseaux)</li>
-                <li>actions en ligne courantes</li>
-                <li>
-                  <strong>Structures :</strong> « On va au cinéma ce soir ? » ;
-                  « J'ai regardé une série hier. » ; « J'ai partagé la photo sur le
-                  groupe. »
-                </li>
-              </ul>
-            </div>
-            <div class="box b1">
-              <h3>B1</h3>
-              <ul>
-                <li>critiquer un film, un livre, une chanson</li>
-                <li>exprimer préférences et justifications</li>
-                <li>parler des usages du numérique</li>
-                <li>
-                  <strong>Structures :</strong> « J'ai trouvé ce film captivant,
-                  car... » ; « Je préfère ce livre, parce que... » ; « Les réseaux
-                  sociaux peuvent être utiles, mais... »
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article class="theme">
-          <h2>Société / Environnement / Citoyenneté</h2>
-          <div class="levels">
-            <div class="box a1">
-              <h3>A1</h3>
-              <ul>
-                <li>fêtes, règles de politesse</li>
-                <li>météo et saisons</li>
-                <li>gestes écologiques élémentaires</li>
-                <li>
-                  <strong>Structures :</strong> « Bonne fête ! » ; « Il fait beau
-                  aujourd'hui. » ; « J'éteins la lumière en sortant. »
-                </li>
-              </ul>
-            </div>
-            <div class="box a2">
-              <h3>A2</h3>
-              <ul>
-                <li>services publics de base</li>
-                <li>petits problèmes de la vie sociale</li>
-                <li>tri, recyclage, énergie au quotidien</li>
-                <li>
-                  <strong>Structures :</strong> « Je dois aller à la mairie. » ;
-                  « Il y a trop de bruit dans l'immeuble. » ; « Nous trions les
-                  déchets à la maison. »
-                </li>
-              </ul>
-            </div>
-            <div class="box b1">
-              <h3>B1</h3>
-              <ul>
-                <li>solidarité, participation, engagement</li>
-                <li>débattre de sujets de société simples</li>
-                <li>causes et conséquences environnementales</li>
-                <li>
-                  <strong>Structures :</strong> « Je me suis engagé dans une
-                  association. » ; « Je pense que cette mesure est utile. » ; « Si
-                  on consomme moins, on réduit les déchets. »
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
+        <h3>Corrigé final</h3>
+        <div class="corrige">
+          1-b, 2-Faux, 3-b, 4-Faux, 5-b, 6-Vrai, 7-a, 8-Vrai.
+        </div>
       </section>
     </main>
 
-    <footer>
-      Vous pouvez adapter ces boîtes selon votre programme et ajouter des exemples
-      de mots appris en classe.
-    </footer>
+    <footer>Ressource concise pour classe FLE — public hispanophone.</footer>
   </body>
 </html>
